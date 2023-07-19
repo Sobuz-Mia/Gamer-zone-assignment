@@ -194,6 +194,10 @@ nav{
     font-weight: 500;
     line-height: 20px;
 }
+.online-game-card .card>:hover{
+    border: 3px solid #F948B2;
+    border-radius: 13px;
+}
 
 /* online game style ends here */
 
@@ -203,7 +207,8 @@ nav{
         padding: 0px 20px;
         text-align: center;
     }
-    nav,.menu,.menu>ul{
+    nav,.menu,.menu>ul,.gamer-team-container
+    {
         flex-direction: column;
     }
     .menu ul li{
@@ -215,7 +220,17 @@ nav{
     .banner-section{
         flex-direction: column-reverse;
     }
-
+    .team-btn,.team-purpose,.team-description{
+        text-align: center;
+    }
+    .team-btn{
+        margin: 0px auto;
+        margin-top: 24px;
+        margin-bottom: 60px;
+    }
+    .online-game-card{
+        grid-template-columns: 1fr;
+    }
 }
 
 
@@ -233,5 +248,19 @@ nav{
     }
     .banner-section{
         flex-direction: column-reverse;
+    }
+    .gamer-team-container{
+        flex-direction: column;
+    }
+    .team-btn,.team-purpose,.team-description{
+        text-align: center;
+    }
+    .team-btn{
+        margin-left: 120px;
+        margin-top: 24px;
+        margin-bottom: 60px;
+    }
+    .online-game-card{
+        grid-template-columns: repeat(2,1fr);
     }
 }
