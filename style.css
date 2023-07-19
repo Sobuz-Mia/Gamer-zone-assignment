@@ -3,3 +3,55 @@
     padding: 0px;
     font-family: 'Work Sans', sans-serif;
 }
+body{
+    padding: 0px 140px;
+}
+/* navbar style start here */
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 2.3rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #0B0223;
+    font-size: 2.5rem;
+}
+
+.logo .logo-title{
+    color: #FF42A5;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    margin-right: 2rem;
+    list-style: none;
+    color: #3C354F;
+    font-weight: 500;
+}
+.menu ul li a{
+    text-decoration: none;
+}
+.follow-us-menu{
+    padding: 0px 24px;
+}
+.navbar-btn{
+    padding: .5rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+}
+.navbar-btn i{
+    padding: 0px 8px;
+}
+.follow-us-menu .nav-youtube{
+    color: #F61C0D;
+    /* margin-left: .8rem; */
+}
