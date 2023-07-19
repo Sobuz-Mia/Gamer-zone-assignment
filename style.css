@@ -3,14 +3,12 @@
     padding: 0px;
     font-family: 'Work Sans', sans-serif;
 }
-body{
-    padding: 0px 140px;
-}
+
 /* navbar style start here */
 nav{
     display: flex;
     justify-content: space-around;
-    padding: 2.3rem;
+    padding: 38px 150px;
 }
 .logo{
     display: flex;
@@ -53,5 +51,12 @@ nav{
 }
 .follow-us-menu .nav-youtube{
     color: #F61C0D;
-    /* margin-left: .8rem; */
+}
+
+/* navbar style ends here */
+
+/* banner style start here */
+.banner-section{
+    display: flex;
+    justify-content: space-around;
 }
