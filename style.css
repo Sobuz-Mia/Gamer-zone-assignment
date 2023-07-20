@@ -252,9 +252,9 @@ img .animation{
     margin-top: 60px;
 }
 .footer-navbar ul{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6,auto);
     justify-content: center;
-    align-items: center;
     gap: 60px;
 }
 .footer-navbar li{
@@ -267,18 +267,18 @@ img .animation{
     font-weight: 600;
 }
 .social-icon{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6,auto);
     justify-content: center;
-    align-items: center;
-    gap: 40px;
+    gap: 60px;
     color: #FFF;
     padding: 60px 0px;
     font-size: 20px;
 }
 .term-conditions ul{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6,auto);
     justify-content: center;
-    align-items: center;
     gap: 60px;
 }
 .term-conditions ul li{
@@ -290,6 +290,8 @@ img .animation{
     font-weight: 500;
 }
 .copy-right{
+    display: flex;
+    justify-content: center;
     color: rgba(255, 255, 255, 0.60);
     font-weight: 500;
     text-align: center;
@@ -304,6 +306,9 @@ img .animation{
     header,main{
         padding: 0px 20px;
         text-align: center;
+    }
+    .logo{
+        justify-content: center;
     }
     nav,.menu,.menu>ul,.gamer-team-container
     
@@ -330,8 +335,27 @@ img .animation{
     .online-game-card{
         grid-template-columns: 1fr;
     }
-}
+    .type-of-games{
+        gap: 1px;
+        margin-bottom: 100px;
+     }
+    .game-details img{
+        width: 40%;
+    }
+    .type-of-games>h1{
+        font-size: 9px;
+        font-weight: 600;
+    }
 
+    .footer-navbar ul,.social-icon{
+        grid-template-columns: repeat(3,auto);
+    }
+    .term-conditions ul{
+        grid-template-columns: repeat(2,auto);
+    }
+    .copy-right{
+      display:block;
+}
 
 
 /* responsive for mediaum screen */
@@ -362,4 +386,21 @@ img .animation{
     .online-game-card{
         grid-template-columns: repeat(2,1fr);
     }
+    .footer-navbar>ul{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+      }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
