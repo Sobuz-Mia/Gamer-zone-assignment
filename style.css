@@ -206,16 +206,25 @@ nav{
 .offline-play-container{
     display: flex;
     align-items: center;
-    padding: 120px 0px;
-    gap: 200px;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 50px 0px;
+    margin-bottom: 0px;
 }
-.play-theme> .play-img{
+.play-instruction{
+    margin-top: -300px;
+}
+.offline-title{
+    margin: 0px 20px 10px 0px;
+}
+.play-theme> img{
+    width: 90%;
+}
+.animation img{
+    width: 60%;
     position: relative;
-}
-
-img .animation{
-    position: absolute;
-    bottom: 100px;
+    bottom: 200px;
+    right: 80px;
 }
 
 /* Offline paly style ends here */
@@ -226,6 +235,7 @@ img .animation{
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
+    margin-top: -120px;
 }
 .type-of-games>h1{
     color: #0B0223;
@@ -326,17 +336,27 @@ img .animation{
     .team-btn,.team-purpose,.team-description{
         text-align: center;
     }
+    .btn{
+        margin-top: 20px;
+    }
     .team-btn{
         margin: 0px auto;
         margin-top: 24px;
         margin-bottom: 60px;
     }
+    .online-game-container{
+        padding-top: 20px;
+    }
     .online-game-card{
         grid-template-columns: 1fr;
+    }
+    .play-instruction{
+        margin-top: -120px;
     }
     .type-of-games{
         gap: 1px;
         margin-bottom: 100px;
+        margin-top: 0px;
      }
      .footer-navbar ul{
         grid-template-columns: repeat(3,auto);
@@ -361,6 +381,9 @@ img .animation{
     .logo{
         justify-content: center;
     }
+    .menu{
+        justify-content: center;
+    }
     nav,.banner-section,.gamer-team-container,
     .offline-play-container
     {
@@ -372,15 +395,26 @@ img .animation{
     .team-description,.team-purpose,.team-btn{
         text-align: center;
     }
+    .play-theme> img{
+        width: 90%;
+        margin-left: 30px;
+    }
+    .animation img{
+        margin-left: 40px;
+    }
     .team-btn{
         margin: 10px;
     }
     .online-game-card{
         grid-template-columns: 1fr;
     }
+    .play-instruction{
+        margin-top: -60px;
+    }
     .type-of-games{
         gap: 1px;
         margin-bottom: 100px;
+        margin-top: 0px;
      }
      .footer-navbar ul{
         grid-template-columns: repeat(3,auto);
