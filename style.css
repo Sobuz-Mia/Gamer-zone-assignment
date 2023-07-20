@@ -302,17 +302,16 @@ img .animation{
 /* Footer style ends here */
 
 /* responsive design for mobile */
-@media screen and (max-width:576px) {
+@media screen and (max-width:576px) 
+{
     header,main{
         padding: 0px 20px;
         text-align: center;
-    }
+    }  
     .logo{
         justify-content: center;
     }
-    nav,.menu,.menu>ul,.gamer-team-container
-    
-    {
+    nav,.menu,.menu>ul,.gamer-team-container{
         flex-direction: column;
     }
     .menu ul li{
@@ -339,68 +338,60 @@ img .animation{
         gap: 1px;
         margin-bottom: 100px;
      }
-    .game-details img{
-        width: 40%;
+     .footer-navbar ul{
+        grid-template-columns: repeat(3,auto);
     }
-    .type-of-games>h1{
-        font-size: 9px;
-        font-weight: 600;
-    }
-
-    .footer-navbar ul,.social-icon{
+    .social-icon{
         grid-template-columns: repeat(3,auto);
     }
     .term-conditions ul{
         grid-template-columns: repeat(2,auto);
     }
     .copy-right{
-      display:block;
+        display:block;
+    }
 }
 
 
-/* responsive for mediaum screen */
-
+/* responsive for medium screen */
 @media screen and (min-width:576px) and (max-width:768px) {
     header,main{
-        padding: 0px 70px;
+        padding: 20px 50px;
     }
-    nav{
-        flex-direction: column;
-        gap: 30px;
-        margin-bottom: 20px;
+    .logo{
+        justify-content: center;
     }
-    .banner-section{
-        flex-direction: column-reverse;
-    }
-    .gamer-team-container{
+    nav,.banner-section,.gamer-team-container,
+    .offline-play-container
+    {
         flex-direction: column;
     }
-    .team-btn,.team-purpose,.team-description{
+    .menu ul,.banner-content,.btn{
+        margin: 50px 0px;
+    }
+    .team-description,.team-purpose,.team-btn{
         text-align: center;
     }
     .team-btn{
-        margin-left: 120px;
-        margin-top: 24px;
-        margin-bottom: 60px;
+        margin: 10px;
     }
     .online-game-card{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1fr;
     }
-    .footer-navbar>ul{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-      }
+    .type-of-games{
+        gap: 1px;
+        margin-bottom: 100px;
+     }
+     .footer-navbar ul{
+        grid-template-columns: repeat(3,auto);
+    }
+    .social-icon{
+        grid-template-columns: repeat(3,auto);
+    }
+    .term-conditions ul{
+        grid-template-columns: repeat(2,auto);
+    }
+    .copy-right{
+        display:block;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
