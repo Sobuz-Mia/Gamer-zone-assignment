@@ -194,12 +194,37 @@ nav{
     font-weight: 500;
     line-height: 20px;
 }
-.online-game-card .card>:hover{
+.online-game-card .card>img:hover{
     border: 3px solid #F948B2;
     border-radius: 13px;
 }
 
 /* online game style ends here */
+
+/* Offline paly style start here */
+
+.offline-play-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 250px;
+    padding: 120px 0px;
+}
+.play-instruction {
+    margin-top: -450px;
+}
+.play-theme>img{
+    width: 100%;
+}
+.animation>img{
+    width: 100%;
+    padding: 20px 10px;
+    position: relative;
+    bottom: 217px;
+    right: 200px;
+}
+
+/* Offline paly style ends here */
 
 /* responsive design for mobile */
 @media screen and (max-width:576px) {
@@ -208,6 +233,7 @@ nav{
         text-align: center;
     }
     nav,.menu,.menu>ul,.gamer-team-container
+    
     {
         flex-direction: column;
     }
@@ -217,7 +243,7 @@ nav{
     .follow-us-menu{
         margin-bottom: 70px;
     }
-    .banner-section{
+    .banner-section,.offline-play-container{
         flex-direction: column-reverse;
     }
     .team-btn,.team-purpose,.team-description{
